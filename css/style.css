@@ -1,0 +1,119 @@
+body {
+  background-color: hsl(30, 38%, 92%);
+  color: hsl(228, 12%, 48%);
+  font-family: "Trebuchet MS", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 11px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 350px;
+}
+
+.img-wrapper {
+  background: url("../images/image-product-mobile.jpg");
+  background-size: cover;
+  height: 15rem;
+}
+
+.perfume > div {
+  margin: 0 auto;
+  width: 84%;
+}
+.perfume h1 {
+  margin-top: 1.4rem;
+  font-size: 0.8rem;
+  font-weight: 300;
+  letter-spacing: 0.3rem;
+}
+.perfume em {
+  color: hsl(212, 21%, 14%);
+  font-size: 2.2rem;
+  font-weight: 900;
+  line-height: 0.9;
+}
+.perfume p {
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+.perfume button {
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  border-radius: 0.5rem;
+  border: none;
+  width: 100%;
+  height: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1.7rem auto;
+  gap: 0.7rem;
+}
+.perfume button:hover {
+  cursor: pointer;
+  background-color: rgb(10, 85, 10);
+}
+
+.price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+.price em {
+  font-size: 2rem;
+  color: hsl(158, 36%, 37%);
+}
+.price span {
+  text-decoration: line-through;
+}
+
+@media (min-width: 600px) {
+  body {
+    height: 90vh;
+  }
+  main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 600px;
+  }
+  .img-wrapper {
+    background: url("../images/image-product-desktop.jpg");
+    background-size: contain;
+    height: 29rem;
+    width: 52rem;
+  }
+  .perfume > div {
+    display: grid;
+    gap: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */

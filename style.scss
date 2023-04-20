@@ -1,0 +1,101 @@
+$primary-100: hsl(30, 38%, 92%);
+$primary-200: hsl(158, 36%, 37%);
+
+$neutral-100: hsl(0, 0%, 100%);
+$neutral-200: hsl(228, 12%, 48%);
+$neutral-300: hsl(212, 21%, 14%);
+
+body {
+  background-color: $primary-100;
+  color: $neutral-200;
+  font-family: "Trebuchet MS", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  background-color: $neutral-100;
+  border-radius: 11px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+.img-wrapper {
+  background: url("../images/image-product-mobile.jpg");
+  background-size: cover;
+  height: 15rem;
+}
+.perfume {
+  > div {
+    margin: 0 auto;
+    width: 84%;
+  }
+  h1 {
+    margin-top: 1.4rem;
+    font-size: 0.8rem;
+    font-weight: 300;
+    letter-spacing: 0.3rem;
+  }
+  em {
+    color: $neutral-300;
+    font-size: 2.2rem;
+    font-weight: 900;
+    line-height: 0.9;
+  }
+  p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+  }
+  button {
+    background-color: $primary-200;
+    color: $neutral-100;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    border: none;
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.7rem auto;
+    gap: 0.7rem;
+    &:hover {
+      cursor: pointer;
+      background-color: rgb(10, 85, 10);
+    }
+  }
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  em {
+    font-size: 2rem;
+    color: $primary-200;
+  }
+  span {
+    text-decoration: line-through;
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    height: 90vh;
+  }
+  main {
+    flex-direction: row;
+    width: 600px;
+  }
+  .img-wrapper {
+    background: url("../images/image-product-desktop.jpg");
+    background-size: contain;
+    height: 29rem;
+    width: 52rem;
+  }
+  .perfume > div {
+    display: grid;
+    gap: 1rem;
+  }
+}
